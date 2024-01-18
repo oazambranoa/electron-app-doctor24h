@@ -1,16 +1,16 @@
 // import React from 'react'
 import SideBar from "../../components/sidebar"
 
-function Profile() {
+function Appointments() {
   return (
     <div className="flex">
       <SideBar />
 
       <div className="flex-1 p-4">
-        Profile
+        Pagina de citas
       </div>
     </div>
   )
 }
 
-export default Profile
+export default Appointments

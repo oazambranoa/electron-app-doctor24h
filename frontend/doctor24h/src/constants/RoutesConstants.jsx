@@ -1,8 +1,10 @@
 const RoutesConstants = {
     HOME: '/home',
     LOGIN: '/login',
-    REGISTER: '/register',
+    REGISTER: '/registro',
     START: '/',
+    APPOINTMENTS: '/citas',
+    PROFILE: '/perfil'
 }
 
 export default RoutesConstants

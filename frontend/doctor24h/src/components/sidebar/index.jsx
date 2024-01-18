@@ -1,4 +1,5 @@
-
+import { Link } from "react-router-dom"
+import RoutesConstants from "../../constants/RoutesConstants"
 
 function SideBar() {
   return (
@@ -15,12 +16,20 @@ function SideBar() {
 
       
       <div className="mb-8">
-        <a href="#" className="text-white block mb-2">Inicio</a>
-        <a href="#" className="text-white block mb-2">Citas</a>
-        <a href="#" className="text-white block mb-2">Configuración</a>
+        <Link to={RoutesConstants.HOME}>
+          <h1 className="text-white block mb-2">Inicio</h1>
+        </Link>
+
+        <Link to={RoutesConstants.APPOINTMENTS}>
+          <h1 className="text-white block mb-2">Citas</h1>
+        </Link>
+
+        <Link to={RoutesConstants.PROFILE}>
+          <h1 className="text-white block mb-2">Configuración</h1>
+        </Link>
       </div>
 
-      {/* Botón de Cerrar Sesión */}
+    
       <button className="bg-white text-blue-500 py-2 px-4 rounded-full">
         Cerrar Sesión
       </button>
