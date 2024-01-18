@@ -8,7 +8,7 @@ function Start() {
             <h1>Doctor24H</h1>
         </div>
 
-        <div className="lg-buttons flex flex-col space-y-4">
+        <div className="lg-buttons flex flex-col space-y-4 items-center">
             <Link to={RoutesConstants.LOGIN}>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     Iniciar sesion
@@ -20,6 +20,9 @@ function Start() {
                     Registrarse
                 </button>
             </Link>
+            <Link to={RoutesConstants.HOME}>
+                Home
+            </Link> 
         </div>
 
     </div>
